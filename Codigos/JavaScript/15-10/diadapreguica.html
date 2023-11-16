@@ -1,0 +1,46 @@
+<html>
+
+<head> <script type="text/javascript" src="diadapreguica2.js"></script>
+    <style type="text/css">
+        .balao{
+            margin-top: 50px;
+            width: 50px;
+            height: 60px;
+            background-color: #000;
+            border-radius: 30px;
+            position: absolute;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>12:09 eu morrendo de preguica e to aqui estudando</h1>
+    <div>Esse input foi feito para testar os eventos de teclado</div>
+    <input type="text" onkeydown="tecladoParaBaixo(event)" 
+    onkeyup="tecladoParaCima(event)" onkeypress="tecladoClicado(event)">;
+    <br><br>
+
+    <form method="post" onsubmit=" return false">;   
+    <div>testando eventos do input</div>
+    <input type="text" onfocus="focado()" onblur="desfocado()">;
+    <br><br>
+    <h3>Qual a segunda cidade que o pai morou?</h3>
+    <select name="cidades" id="cidade1" onchange="selecionada(this)">
+    <option>Jaragua do Sul </option>
+    <option>Blumenau</option>
+    <option>Dublin </option>
+    <option>Guimaraes </option>
+
+    </select>
+    <button type="submit"> Enviar</button>
+</form>
+
+<br><br><br>
+<div class="balao"></div>
+
+    
+
+</body>
+
+</html>

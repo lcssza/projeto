@@ -1,0 +1,2 @@
+innerHTML: O innerHTML retorna todo o texto e o html que existem no elemento. 
+Ele retorna todo o html existente, retornando também às tags, e não somente o texto.

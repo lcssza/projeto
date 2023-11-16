@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- aqui criei uma div pra colocar a imagem-->
+    <div id="container">
+      <div id="profile">
+        <img src="./assetss/avatar-lucas.png.png" alt="" />
+        <p>@lcssza</p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+      <!-- aqui uma lista com as coisas que faziam sentido, o # é para clicar mas nao ir a nenhum lugar-->
+      <ul>
+        <li>
+          <a href="#">Inscreva-se no meu canal!</a>
+        </li>
+        <br />
+        <li>
+          <a href="https://github.com/lcssza">Acesse meu Portfólio</a>
+        </li>
+        <br />
+        <li>
+          <a href="#">Veja meu e-book gratuito</a>
+        </li>
+        <br />
+        <li>
+          <a href="https://www.rocketseat.com.br/explorer"
+            >Aprenda junto comigo</a
+          >
+        </li>
+      </ul>
+      <!-- aqui os icones de social media, para quando clicar ir a algum lugar tbm-->
+      <div id="social-links">
+        <a href="https://github.com/lcssza" target="_blank">
+          <ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a href="https://instagram.com/lcssza" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="https://youtube.com/lcssza" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/lucas-de-souza-078537128/"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+      </div>
+      <footer>
+        Feito pelo Souzinha através do
+        <a href="https://www.rocketseat.com.br/explorer">Rocket Seat</a>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

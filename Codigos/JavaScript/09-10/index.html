@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aprendendo JavaScript </title>
+	<script type= "text/javascript" src="comeco.js"> </script>
+</head>
+
+<body>
+	<h1>Aprendendo JavaScript</h1>
+
+<div id="bemvindo"> Bem vindo ao site do pai
+
+</div>
+<br/>
+
+	<h5>Alguma duvida?</h5>
+	<button onclick="window.location.href='https://google.com'; ">  Ir ao google </button> <br>
+	<h5>Se nao achou a resposta, chama o pai:</h5>
+	<button onclick="window.location.href='contato.html' "> Contato do pai </button> 	<br>
+	<h5>Se nao consegue clicar no atualizar da pagina por que seu mouse e podre, clica ai: </h5>
+	<button onclick="window.location.href='index.html' "> Atualizar pagina</button>
+	<br> <br>
+	<h5>Bota teu nome ai pra ver a magica acontecer:</h5>
+	<button onclick="document.getElementById('bemvindo').innerHTML=
+	'Bem vindo ' + prompt('Qual seu nome?'); "> Entrar </button>
+	<br><br>
+	<h5>Agora da login ai nessa porra:</h5>
+
+	<form class="pure-form">
+		<fieldset>
+			<div>Usuario </div>
+	
+			<input type="text" placeholder="Usuario" id="usuario" required><br>
+			<div>Senha </div>
+	
+			<input type="password" placeholder="Senha" id="password" required>
+			<input type="password" placeholder="Confirme Senha" id="confirm_password" required>
+	
+			<button type="submit" class="pure-button pure-button-primary" onclick="validatePassword()">Confirmar</button>
+		</fieldset>
+		
+	</form>
+
+	
+	
+
+	
+
+</body>
+</html>
