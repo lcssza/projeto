@@ -38,7 +38,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -67,7 +68,7 @@ body * {
 #switch button {
   width: 32px;
   height: 32px;
-  background: white url(/assets/assetss/moon-stars.svg) no-repeat center;
+  background: white url(./assetss/moon-stars.svg) no-repeat center;
   border: 0;
   border-radius: 50%;
 
