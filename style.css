@@ -31,6 +31,7 @@ body {
   background-position-x: top center;
   background-size: cover; dando pra transformar tudo isso no abaixo: */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -56,7 +57,7 @@ body * {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  padding: 8px;
+  margin-top: 8px;
 }
 
 #switch {
@@ -68,7 +69,7 @@ body * {
 #switch button {
   width: 32px;
   height: 32px;
-  background: white url(./assets/moon-stars.svg) no-repeat center;
+  background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
 
@@ -82,6 +83,10 @@ body * {
 
 .light #switch button {
   animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -100,6 +105,8 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  padding: 24px 0;
 }
 
 ul li a {
@@ -114,12 +121,14 @@ ul li a {
   -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
   font-weight: 500;
-  transition: backgound 0.2s;
-}
+
+  transition: background 0.2s;
+  }
+
 /* o hover é pra quando passar o mouse por cima */
 ul li a:hover {
-  background-color: var(--surface-color-hover);
-  border: 1.5px solid rgba(255, 255, 255, 1);
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
 }
 
 #social-links {
@@ -146,6 +155,19 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* animation */
 @keyframes slide-in {
   from {
     left: 0;
